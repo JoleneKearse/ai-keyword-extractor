@@ -30,11 +30,11 @@ const TextInput = ({ extractKeywords }) => {
         onChange={(e) => setText(e.target.value)}
       />
       <Button
-        bg="cyan.500"
-        color="purple.50"
+        bg="yellow.300"
+        color="purple.800"
         marginTop={4}
         width="100%"
-        _hover={{ bg: "cyan.600" }}
+        _hover={{ bg: "yellow.400" }}
         onClick={submitText}
       >
         Extract Keywords
