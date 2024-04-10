@@ -39,8 +39,6 @@ const App = () => {
     const response = await fetch(import.meta.env.VITE_OPENAI_API_URL, options);
     const json = await response.json();
     const data = json.choices[0].message.content;
-
-    console.log(data);
     setKeywords(data);
     setLoading(false);
   };
@@ -61,7 +59,7 @@ const App = () => {
         loading={loading}
         isOpen={isOpen}
         closeModal={closeModal}>
-        </KeywordModal>
+      </KeywordModal>
     </Box>
   )
 }

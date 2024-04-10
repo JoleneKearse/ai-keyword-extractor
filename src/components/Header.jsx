@@ -1,5 +1,5 @@
 import { Heading, Image, Text } from "@chakra-ui/react";
-import logo from "../assets/light-bulb.svg";
+import logo from "../assets/keyword-generator.svg";
 
 const Header = () => {
   return (
