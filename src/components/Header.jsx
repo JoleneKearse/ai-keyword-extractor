@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <Image src={logo} alt="logo" width={100} marginBottom="1rem" />
-      <Heading color="purple.50" marginBottom="1rem">
+      <Heading color="yellow.300" marginBottom="1rem">
         AI Keyword Extractor
       </Heading>
       <Text fontSize={25} textAlign="center">
