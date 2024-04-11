@@ -20,7 +20,7 @@ const App = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${import.meta.env.VITE_OPENAI_API_KEY}`,
+        Authorization: `Bearer ${import.meta.env.OPENAI_API_KEY}`,
       },
       body: JSON.stringify({
         model: "gpt-3.5-turbo",
@@ -36,7 +36,7 @@ const App = () => {
       })
     };
 
-    const response = await fetch(import.meta.env.VITE_OPENAI_API_URL, options);
+    const response = await fetch(import.meta.env.OPENAI_API_URL, options);
     const json = await response.json();
     const data = json.choices[0].message.content;
     setKeywords(data);
