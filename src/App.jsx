@@ -27,7 +27,7 @@ const App = () => {
         messages: [
           {
             role: "system",
-            content: "Extract keywords from this text. Make the first letter of each word capitalized and separate with commas.\n\n" + text + "",
+            content: "Determine the overall topic of the text.  Use this to extract keywords from this text related to the topic. Make the first letter of each word capitalized and separate with commas.\n\n" + text + "",
           }
         ],
         temperature: 0.5,
